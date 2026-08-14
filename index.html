@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pac-Man Mini — Galiza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+
+    <h1>👾 Pac-Man Mini</h1>
+    <p class="subtitle">Eat all the dots. Avoid the ghosts. Use arrow keys.</p>
+
+    <div class="stats">
+      <div class="stat-box">
+        <span class="label">Score</span>
+        <span id="score">0</span>
+      </div>
+      <div class="stat-box">
+        <span class="label">Lives</span>
+        <span id="lives">3</span>
+      </div>
+    </div>
+
+    <canvas id="game-canvas" width="360" height="360"></canvas>
+
+    <button id="start-btn" class="start-btn">Start</button>
+
+    <div id="result" class="result hidden">
+      <h2 id="result-title">Game Over 🎮</h2>
+      <p id="final-score"></p>
+      <button id="restart-btn" class="restart-btn">Try Again</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
